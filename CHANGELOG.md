@@ -10,10 +10,12 @@
 ### Updated:
 - Apps:
   - Authenticator: New options to have space between groups of digits (by @akopachov)
+  - Blackhat: Fix Run Script command (by @o7-machinehum), fix NULL ptr scrolling menu suboptions, more wlan selectors and stop options (by @WillyJL)
   - Camera Suite: Handle 128x128 image, fix image rotation bug (by @rnadyrshin)
   - Combo Cracker: Many usability improvements (by @CharlesTheGreat77)
-  - ESP Flasher: Bump Marauder 1.6.2 (by @justcallmekoko), FlipperHTTP 2.0 (by @jblanked)
+  - ESP Flasher: Bump Marauder 1.7.0 (by @justcallmekoko), FlipperHTTP 2.0 (by @jblanked)
   - Flame RNG: New App Icon (by @Kuronons), Improved the RNG using the hardware RNG and some bit mixing (by @OrionW06)
+  - FlipDownloader: Add Picoware (by @jblanked)
   - FlipWiFi: Added Deauthentication mode (by @jblanked)
   - Passy: Capitalize document number (by @bettse)
   - Picopass: Bugfixes and refactoring (by @bettse)
@@ -42,6 +44,7 @@
   - UL: Fix clipper date timestamp (by @luu176)
 - BadKB: Fix key combos main keys being case sensitive (by @WillyJL)
 - Sub-GHz:
+  - Fix frequency analyzer deadlock when holding Ok (by @WillyJL)
   - UL: Fix CAME 24bit decoder (by @xMasterX)
   - UL: Tune holtek ht12x to decode holtek only and not conflict with came 12bit (by @xMasterX)
   - UL: Fix Rename scene bug, that was replacing file name with random name when Rename is opened then closed then opened again (by @xMasterX)
