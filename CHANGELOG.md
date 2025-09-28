@@ -1,8 +1,56 @@
 ### Added:
 - Apps:
+  - Games: Geometry Flip (by @goosedev72-projects)
+  - GPIO:
+    - [GPIO] Explorer (by @EvgeniGenchev07)
+    - [KT0803] FM Transmitter (by @goosedev72-projects)
+    - [SPI] Terminal (by @janwiesemann)
+  - GPIO/Debug:
+    - [FTDI232H] FlipTDI (by @Skorpionm)
+    - [INA2xx] INA Meter (by @cepetr)
+  - GPIO/ESP: [ESP32] Ghost ESP (by @jaylikesbunda)
+  - GPIO/FlipBoard:
+    - FlipBoard Blinky (by @jamisonderek)
+    - FlipBoard Keyboard (by @jamisonderek)
+    - FlipBoard Signal (by @jamisonderek)
+    - FlipBoard Simon (by @jamisonderek)
+  - GPIO/FlipperHTTP: Free Roam (by @jblanked)
   - GPIO/GPS: [NMEA] Nearby Files (by @Stichoza)
+  - GPIO/Sensors: [MH-Z19] CO2 Logger (by @harryob2)
+  - iButton: iButton Converter (by @Leptopt1los)
+  - Infrared:
+    - Hitachi AC Remote (by @dogtopus)
+    - LIDAR Emulator (by @regaly)
+    - Midea AC Remote (by @xakep666)
+    - Mitsubishi AC Remote (by @achistyakov)
+    - Xbox Controller (by @gebeto)
+  - Media:
+    - Fmatrix (by @misterwaztaken)
+    - Image Viewer (by @polioan)
+    - Space Playground (by @alanfortlink)
+    - Video Player (by @LTVA1)
   - NFC: NFC-Eink (by @RebornedBrain)
-  - Sub-GHz: Sub Analyzer (by @RocketGod-git)
+  - RFID: Simultaneous UHF RFID Reader (by @haffnerriley)
+  - Sub-GHz:
+    - Chief Cooker (by @denr01)
+    - Flipper Share (by @lomalkin)
+    - HC-11 Modem (by @Giraut)
+    - Sub Analyzer (by @RocketGod-git)
+    - Sub-GHz Scheduler (by @shalebridge, fixes by @xMasterX)
+  - Tools:
+    - FlipCrypt (by @Tyl3rA)
+    - Programmer Calculator (by @armixz)
+    - Resistance Calculator (by @instantiator)
+    - Tasks (by @MadLadSquad)
+    - Voltage Calculator (by @HappyAmos)
+  - USB:
+    - LEGO Dimensions Toy Pad (by @SegerEnd)
+    - USB-MIDI (by @kribesk, original by @DrZlo13)
+- NFC:
+  - XERO: MIFARE Ultralight C feature parity with MIFARE Classic in native NFC app (by @noproto)
+    - Dictionary attack: Uses system and user dictionaries stored under /nfc/assets/ to unlock Ultralight C tags
+    - Key management: Extra Actions → MIFARE Ultralight C Keys in the NFC app allows you to add, list, and remove Ultralight C keys from your Flipper
+    - UI: Dictionary attack scene and menu options
 - SubGHz:
   - UL: Roger (static 28 bit) with add manually support (by @xMasterX & @mishamyte)
   - UL: V2 Phoenix full support (button switch, add manually, counter decrypt/encrypt) (by @xMasterX & @RocketGod-git, original code by @Skorpionm)
@@ -11,6 +59,7 @@
   - UL: Marantec protocol implement CRC verification display and add manually support (by @xMasterX & @li0ard, original code by @Skorpionm)
   - UL: Keeloq Comunello add manually support (by @xMasterX)
   - UL: Add variant of 'Add Manually' menu with manual editing for each value (by @MrLego8-9)
+  - UL: Add ZKTeco 430.5 MHz add manually support (by @xMasterX)
 - RFID: Support writing Securakey, Jablotron and FDX-B to EM4305 cards (#434 by @jamisonderek)
 - BT Remote: Add Rename Option, simplify Bad KB BLE profile (#439 by @aaronjamt & @WillyJL)
 - MNTM Settings:
@@ -19,23 +68,37 @@
 - Desktop: Add Keybinds support for directories (#331 by @956MB & @WillyJL)
 - Input Settings: Add Vibro Trigger option (#429 by @956MB)
 - Archive: Support opening and favoriting Picopass files (by @WillyJL)
+- OFW: GUI: Add date/time input module (by @aaronjamt)
 
 ### Updated:
 - Apps:
+  - XERO: MFKey: Key recovery is 20% faster, new write buffering of Static Encrypted Nested key candidates performs recovery 70x faster (by @noproto)
+  - UL: Sub-GHz Remote: Add possibility to use custom buttons (by @MrLego8-9)
   - Asteroids: Bugfixes, title screen, Drone Buddy power-up (by @SimplyMinimal)
-  - Combo Cracker: Allow press and hold to change values, add tutorial (by @TAxelAnderson)
-  - ESP Flasher: Bump Marauder 1.8.3 (by @justcallmekoko)
-  - FlipDownloader: Added a new option to download GitHub repositories (by @jblanked)
+  - Combo Cracker: Allow press and hold to change values, add tutorial (by @TAxelAnderson), support alphabetic combination locks (by @henrygab)
+  - ESP Flasher: Bump Marauder 1.8.4 (by @justcallmekoko), add C5 support (by @Play2BReal)
+  - FlipDownloader: Added a new option to download GitHub repositories with dedicated keyboard, add auto updating (by @jblanked)
   - FlipSocial: C++ rewrite, comments on feed posts, simpler logic and registration (by @jblanked)
+  - FlipWiFi: Minor bugfixes (by @jblanked)
   - Flipper Blackhat: Add Deauth Broadcast command (by @o7-machinehum)
-  - KeyCopier: Added Weiser WR3 key format (by @lightos)
+  - KeyCopier: Added Weiser WR3 key format (by @lightos), added Suzuki SUZ18 key format (by @RIcePatrol)
+  - Mass Storage: Add ability to spoof USB identity values (by @xtruan)
   - Metroflip: Fix unsupported card crash, RENFE Suma 10 support, GEG Connect AID added, Top Up log parsing and animations, 16 new rail lines, support for parsing area codes, saving function for Suica/Japan Rail IC, bugfixes (by @luu176)
-  - NFC Playlist: Refactor playlist worker, new settings layout, loop setting, controls to move between items (by @acegoal07)
+  - NFC Maker: Support making empty/blank NDEF payloads (by @WillyJL)
+  - NFC Playlist: Refactor playlist worker, new settings layout and management, loop setting, controls to move between items (by @acegoal07)
+  - NMEA GPS: Moved to GPIO/GPS subfolder (by @WillyJL)
+  - Passy: Misc memory management bugfixes, misc UI improvements (by @qistoph)
+  - Seader: Fix ATS handling (by @NVX), reset SAM on error (by @bettse)
   - Sentry Safe: New interface, settings & help page (by @H4ckd4ddy)
-  - WiFi Marauder: Support for ESP32Marauder 1.8.x (by @justcallmekoko)
+  - Seos Compatible: Add keys v2 support with per-device encryption (by @bettse)
+  - Sub-GHz Playlist: Fix crash on disallowed frequencies (by @WillyJL)
+  - Weather Station: Added support for solight TE44 (by @fersingb)
+  - Weebo: Prevent 0x88 in UID[3], add more figures to the database (by @bettse)
+  - WiFi Marauder: Support for ESP32Marauder 1.8.4 (by @justcallmekoko)
 - Sub-GHz:
   - UL: Add 868.46 MHz to default subghz freqs list (by @xMasterX)
   - UL: Reduce less popular freqs in default hopper preset, make it faster (by @xMasterX)
+  - UL: Tune Linear (add better EZCode support), Dickert MAHS decoders (by @xMasterX)
 - JS: Expose button event type in `gui/widget` button callback (by @WillyJL)
 - UL: Docs: Update Sub-GHz DoorHan programming instructions (by @li0ard)
 
@@ -43,7 +106,10 @@
 - CLI: Fix long delay with quick connect/disconnect, qFlipper should connect faster as expected again (by @WillyJL)
 - Bad KB: Fix modifier keys with HOLD/RELEASE commands (by @WillyJL)
 - Desktop: Fix lock screen hang (#438 by @aaronjamt)
-- NFC: Fix incorrect Saflok year formula (#433 by @Eltrick)
+- NFC:
+  - Fix incorrect Saflok year formula (#433 by @Eltrick)
+  - Fix read crash with unexpectedly large MFC AUTH(0) response, eg with Chameleon Ultra NTAG emualtion (by @WillyJL)
+  - Fix slashes in prefilled filename (by @WillyJL)
 - FBT: Fix redundant decl for apps using an icon disabled in API (by @WillyJL)
 
 ### Removed:
